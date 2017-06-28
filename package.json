@@ -1,6 +1,6 @@
 {
   "name": "js-analyse",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Javascript analysis tool",
   "main": "index.js",
   "scripts": {
