@@ -72,7 +72,7 @@ function traverse (tree, nodeFn) {
     traverse(tree.body, nodeFn)
   } else if (tree.expression && tree.expression.arguments && tree.expression.arguments.length > 0) {
     _.each(tree.expression.arguments, function (arg) {
-      if (arg.type === 'FunctionExpression') {
+      if (arg.type === 'FunctionExpression' || arg.type === 'ArrowFunctionExpression') {
         traverse(arg.body, nodeFn)
       }
     })

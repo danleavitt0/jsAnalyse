@@ -23,7 +23,7 @@ while (bool) {
 }
 
 // LLOC 10
-loop(function () {
+loop(() => {
   //LLOC 11
   foo()
   //LLOC 12
